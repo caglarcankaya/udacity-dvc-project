@@ -7,11 +7,6 @@ path = os.getcwd()
 
 @pytest.fixture
 def data():
-    print("current dir")
-    print(os.listdir(path))
-    print("one parent dir")
-    print(os.listdir(path+ '/data/'))
-
     df = pd.read_csv(path+ '/data/clean_census.csv')
     return df
 
