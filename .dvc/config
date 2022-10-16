@@ -1,0 +1,4 @@
+[core]
+    remote = caglar-dvc-udacity
+['remote "caglar-dvc-udacity"']
+    url = s3://caglar-dvc-udacity
