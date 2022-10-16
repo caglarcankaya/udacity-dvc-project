@@ -10,11 +10,9 @@ def data():
     print("current dir")
     print(os.listdir(path))
     print("one parent dir")
-    print(os.listdir(path+ '/../'))
-    print("parent to data directory")
-    print(os.listdir(path+ '/../data'))
+    print(os.listdir(path+ '/data/'))
 
-    df = pd.read_csv(path+ '/../data/clean_census.csv')
+    df = pd.read_csv(path+ '/data/clean_census.csv')
     return df
 
 @pytest.fixture
