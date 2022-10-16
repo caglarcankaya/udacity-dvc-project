@@ -43,5 +43,4 @@ jobs:
           dvc pull
       - name: Test with pytest
         run: |
-          pytest starter/ -vv
-          pytest /fastapi_test.py -vv
+          pytest /tests -vv
