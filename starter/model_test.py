@@ -1,15 +1,13 @@
 import pytest
 import pandas as pd
 import os
-import sys
 
-print(os.getcwd())
-sys.path.append('../starter/ml')
 from starter.ml.data import process_data
 path = os.getcwd()
 
 @pytest.fixture
 def data():
+    print(path+ '/../data/clean_census.csv')
     df = pd.read_csv(path+ '/../data/clean_census.csv')
     return df
 
