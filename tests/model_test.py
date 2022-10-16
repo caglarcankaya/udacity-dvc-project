@@ -1,8 +1,10 @@
 import pytest
 import pandas as pd
 import os
-from starter.ml.data import process_data
+import sys
 
+sys.path.append('../')
+from starter.ml.data import process_data
 path = os.getcwd()
 
 @pytest.fixture

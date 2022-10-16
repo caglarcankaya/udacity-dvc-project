@@ -1,12 +1,13 @@
 from fastapi.testclient import TestClient
 import json
+import sys
 
+sys.path.append('../')
 # Import our app from main.py.
 from main import app, CensusRequest, CensusBatchRequest
 
 # Instantiate the testing client with our app.
 client = TestClient(app)
-
 
 def test_api_get():
     response = client.get("/")
