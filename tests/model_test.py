@@ -5,7 +5,7 @@ import sys
 
 print(os.getcwd())
 sys.path.append('../starter/ml')
-from data import process_data
+from starter.ml.data import process_data
 path = os.getcwd()
 
 @pytest.fixture

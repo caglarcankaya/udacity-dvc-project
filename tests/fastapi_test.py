@@ -1,8 +1,5 @@
 from fastapi.testclient import TestClient
 import json
-import sys
-
-sys.path.append('../')
 # Import our app from main.py.
 from main import app, CensusRequest, CensusBatchRequest
 
