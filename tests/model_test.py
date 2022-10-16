@@ -3,8 +3,9 @@ import pandas as pd
 import os
 import sys
 
-sys.path.append('../')
-from starter.ml.data import process_data
+print(os.getcwd())
+sys.path.append('../starter/ml')
+from data import process_data
 path = os.getcwd()
 
 @pytest.fixture
