@@ -43,6 +43,6 @@ jobs:
           dvc pull
       - name: Test with pytest
         run: |
-          pytest fastapi_test.py -vv
-          #pytest starter/model_test.py -vv
+          #pytest fastapi_test.py -vv
+          pytest starter/model_test.py -vv
           
