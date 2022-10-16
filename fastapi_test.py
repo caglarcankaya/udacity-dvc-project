@@ -1,5 +1,6 @@
 from fastapi.testclient import TestClient
 import json
+
 # Import our app from main.py.
 from main import app, CensusRequest, CensusBatchRequest
 
